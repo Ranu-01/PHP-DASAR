@@ -2,11 +2,11 @@
 
 $MyArray = array(1, 10, 23, 50, 4, 9, -4);
 $n = sizeof($MyArray); 
-echo "Original Array\n";
+echo "aray yang asli \n";
 PrintArray($MyArray, $n);
 
-// function for insertion sort
-function insertionsort(&$Array, $n) {
+function insertionsort(&$Array, 
+$n) {
   for($i=0; $i<$n; $i++) {
     $curr = $Array[$i];
     $j = $i - 1;
@@ -18,7 +18,6 @@ function insertionsort(&$Array, $n) {
   }
 }
 
-// function to print array
 function PrintArray($Array, $n) { 
   for ($i = 0; $i < $n; $i++) 
     echo $Array[$i]." "; 
@@ -26,6 +25,6 @@ function PrintArray($Array, $n) {
 } 
 
 insertionsort($MyArray, $n);
-echo "\nSorted Array\n";
+echo "\n yang sudah di Sorted  Array\n";
 PrintArray($MyArray, $n);
 ?>
